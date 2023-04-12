@@ -4,8 +4,11 @@ class Rectangle {
 		this.width = width;
 		this.height = height;
 	}
-	get getters(){
-		return 
+	get heigth(){
+		return this.height; 
+	}
+	get width(){
+		return this.width;
 	}
 	getArea(width,height){
 		let area = this.width * this.height;
@@ -14,11 +17,9 @@ class Rectangle {
 }
 
 class Square extends Rectangle {
-	constructor(area){
-		this.area = area;
-	}
+
 	super(getArea());
-	getPerimrter(){
+	getPerimrter(this.area){
 		let perimeter = 4*this.area;
 		
 	}
